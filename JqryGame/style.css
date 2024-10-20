@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border: 2px solid #333;
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.card.clicked {
+    cursor: default;
+    background-color: #fff;
+}
+
+#score {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 24px;
+    color: red;
+}
